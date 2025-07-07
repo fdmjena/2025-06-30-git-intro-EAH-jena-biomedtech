@@ -20,7 +20,10 @@
 {% if site.flavor == "r" %}
 {% include install_instructions/r.html %}
 {% elsif site.flavor == "python" %}
-{% include install_instructions/python.html %}
+{% comment %}
+This line is commented out as it is included due to py-flavor set in _config, but it is not needed in the course
+	{% include install_instructions/python.html %}
+{% endcomment %}
 {% elsif site.flavor == "FIXME" %}
 {% include install_instructions/r.html %}
 {% include install_instructions/python.html %}
